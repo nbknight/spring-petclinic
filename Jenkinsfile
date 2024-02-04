@@ -4,6 +4,7 @@ pipeline {
     stage('Build') {
       steps {
         echo 'Pull latest code base'
+        sh './mvnw clean compile'
       }
     }
 
